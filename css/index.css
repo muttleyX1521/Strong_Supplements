@@ -9,12 +9,12 @@
 }
 
 body {
-    display: flex;
-    background-color: #d0d0d0;
+    /* display: block; */
+    background-color: #bbbbbb;
 }
 
 .navigation {
-    position: absolute;
+    position: relative;
     height: 105px;
     width: 100%;
     background-image: linear-gradient(
@@ -113,7 +113,7 @@ body {
 }
 
 .main-links :hover {
-    color: #00ff23;
+    color: #0f0;
 }
 
 .sub-links {
@@ -122,17 +122,17 @@ body {
     margin-top: 30px;
     width: 100%;
     height: 45px;
-    background-color: #141414;
+    background-color: #1a1a1a;
     text-align: center;
     justify-content: space-around;
 }
 
 .sub-links li {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .sub-links li :hover{
-    color: #00ff23;
+    color: #0f0;
 }
 
 .sub-links ul {
@@ -148,13 +148,88 @@ body {
 }
 
 .carousel{
-    margin-top: 140px;
+    margin-top: 40px;
     z-index: 2;
-    width: 1366px;
+    width: 100%;
     height: 468px;
 }
 
 .carousel-item img{
-    width: 1366px;
+    width: 100%;
     height: 468px;      
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(0, 255, 0);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card .preço {
+    font-size: 30px;
+    color: rgb(40, 168, 40);
+}
+
+.footer {
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: #303030;
+    color: #fff;
+    padding: 20px;
+    justify-content: left;
+}
+
+.footer-container {
+    margin-left: 50px;
+    max-width: 800px;
+}
+
+.footer p {
+    justify-items: left;
+    justify-content: left;  
+}
+
+.footer a {
+    text-decoration: none;
+    color: #0f0;
+}
+
+.footer ion-icon {
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+.reserved-rights {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #161616;
+    color: #0f0;
+}
+
+.reserved-rights p {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
 }

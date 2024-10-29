@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Payment Gateway Form Design using HTML and CSS | Codehal</title>
-    <link rel="stylesheet" href="help.css">
+    <title>Cadastre-se em nosso site!</title>
+    <link rel="stylesheet" href="../css/loginCadastroCliente.css">
 </head>
  
 <body>
@@ -18,6 +18,7 @@
                     
                     
                     <div class="first-column">
+                        <img src="../img/logo branca att.png" alt="">
                         <h2 class="title title-primary">Já tem cadastro?</h2>
                         <p class="description description-primary">Para continuar conectado em nosso site</p>
                         <p class="description description-primary">por favor faça login com sua conta!</p>
@@ -26,65 +27,70 @@
 
                     <div class="second-clunm">
                         <h3 class="title">Cadastrar</h3>
-                    <form action="#">
+                    <form action="#" method="post">
                         <div class="row">
                             <div class="column">
                                 
                     <div class="input-box">
                         <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
                         <span>Nome:</span>
-                        <input type="text">
+                        <input type="text" name="nome" placeholder="Informe seu nome!" required autofocus>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
                         <span>CPF:</span>
-                        <input type="text">
+                        <input type="text" name="cpf" maxlength="14" placeholder="___ . ___ . ___ - __" oninput="mascaraCPF(this)" required autofocus>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
                         <span>Data de nascimento:</span>
-                        <input type="date">
+                        <input type="date" name="dt_nasc" required autofocus>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="male-female"></ion-icon></ion-icon></span>
                         <span>Gênero:</span>
                         <select class="slec" name="genero">
                             <option value="0"></option>
-                            <option value="1">Feminino</option>
-                            <option value="2">Masculino</option>
-                            <option value="2">Outros</option>
+                            <option value="F">Feminino</option>
+                            <option value="M">Masculino</option>
+                            <option value="O">Outros</option>
                           </select>
                         
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="home"></ion-icon></ion-icon></span>
                         <span>Endereço:</span>
-                        <input type="text">
+                        <input type="text" name="endereço" placeholder="Informe seu endereço!" required autofocus>
                     </div>
                 </div>
                 <div class="column">
             
                 <div class="input-box">
                     <span class="icon"><ion-icon name="call"></ion-icon></span>
-                    <span>Número:</span>
-                    <input type="text">
+                    <span>Telefone:</span>
+                    <input type="text" name="telefone" placeholder="(xx) x xxxx-xxxx" required autofocus>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <span>Email:</span>
-                    <input type="email">
+                    <span>E-mail:</span>
+                    <input type="email" name="email" placeholder="Informe seu e-mail!" required autofocus>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                     <span>Usuário:</span>
-                    <input type="text">
+                    <input type="text" name="usuário" placeholder="Informe seu nome de usuário!" required autofocus>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
                     <span>Senha:</span>
-                    <input type="password">
-            </div>
-            
+                    <input type="password" name="senha" required autofocus>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                    <span>Confirmar Senha:</span>
+                    <input type="password" name="confirm_senha" required autofocus>
+                </div>
+
             </div>
         </div>
         </form>
@@ -98,15 +104,16 @@
                     
                     
             <div class="first-column">
+                <img src="../img/logo branca att.png" alt="">
                 <h2 class="title title-primary">Primeira vez aqui?</h2>
                 <p class="description description-primary">Faça seu cadastro e</p>
-                <p class="description description-primary">venha conhecer nossa loja</p>
+                <p class="description description-primary">venha conhecer nossa loja!</p>
                 <button id="signup" class="btn btn-primary">sign up</button>
             </div>
 
             <div class="second-clunm">
                 <h3 class="title">Login</h3>
-            <form action="#">
+            <form action="#" method="post">
                 <div class="row">
                     <div class="column">
                         
@@ -131,7 +138,7 @@
 </div>
     </div>
 
-    <script src="app.js"></script>
+        <script src="../js/loginCadastroCliente.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

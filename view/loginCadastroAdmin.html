@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de administradores</title>
+    <link rel="stylesheet" href="../css/loginCadastroAdmin.css">
+</head>
+ 
+<body>
+    <div class="main">
+        
+            
+                <div class="content first-content">
+
+                    
+                    
+                    <div class="first-column">
+                        <h2 class="title title-primary">Já tem cadastro?</h2>
+                        <p class="description description-primary">Para continuar conectado em nosso site</p>
+                        <p class="description description-primary">por favor faça login com sua conta!</p>
+                        <button id="signin" class="btn btn-primary">sign in</button>
+                    </div>
+
+                    <div class="second-clunm">
+                        <h3 class="title">Cadastrar</h3>
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="column">
+                                
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="accessibility"></ion-icon></span>
+                        <span>Nome:</span>
+                        <input type="text" name="nome" placeholder="Informe seu nome!" required autofocus>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+                        <span>CPF:</span>
+                        <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required autofocus>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="male-female"></ion-icon></ion-icon></span>
+                        <span>Gênero:</span>
+                        <select class="slec" name="genero">
+                            <option value="0"></option>
+                            <option value="F">Feminino</option>
+                            <option value="M">Masculino</option>
+                            <option value="O">Outros</option>
+                          </select>
+                        
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="settings"></ion-icon></span>
+                        <span>Tipo:</span>
+                        <select class="slec" name="genero">
+                            <option value="0"></option>
+                            <option value="1">Administrador Vendedor</option>
+                            <option value="2">Administrador Gerenciador</option>
+                            <option value="3">Administrador Suporte</option>
+                          </select>
+                        
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="home"></ion-icon></ion-icon></span>
+                        <span>Endereço:</span>
+                        <input type="text" name="endereço" placeholder="Informe seu endereço!" required autofocus>
+                    </div>
+                </div>
+                <div class="column">
+            
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <span>Telefone:</span>
+                    <input type="text" name="telefone" placeholder="(xx) x xxxx-xxxx" required autofocus>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <span>E-mail:</span>
+                    <input type="email" name="email" placeholder="Informe seu e-mail!" required autofocus>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <span>Usuário:</span>
+                    <input type="text" name="usuário" placeholder="Informe seu nome de usuário!" required autofocus>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                    <span>Senha:</span>
+                    <input type="password" name="senha" required autofocus>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                    <span>Confirmar Senha:</span>
+                    <input type="password" name="confirm_senha" required autofocus>
+                </div>
+
+            </div>
+        </div>
+        </form>
+        <button type="submit" class="bnt">Cadastrar</button>
+    </div>
+    
+        </div>
+        
+        <div class="content second-content">
+
+                    
+                    
+            <div class="first-column">
+                <h2 class="title title-primary">Não tem um cadastro?</h2>
+                <p class="description description-primary">Faça seu cadastro e</p>
+                <p class="description description-primary">comece os trabalhos!</p>
+                <button id="signup" class="btn btn-primary">sign up</button>
+            </div>
+
+            <div class="second-clunm">
+                <h3 class="title">Login</h3>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="column">
+                        
+            
+        <div class="input-box2">
+            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+            <span>Usuário:</span>
+            <input type="text">
+        </div>
+        <div class="input-box2">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+            <span>Senha:</span>
+            <input type="password">
+    </div>
+    
+    </div>
+</div>
+</form>
+<button type="submit" class="bnt">Login</button>
+</div>
+
+</div>
+    </div>
+
+        <script src="../js/loginCadastroAdmin.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
